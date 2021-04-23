@@ -1,0 +1,3 @@
+/home/keras/libcrc/CMakeFiles/rebuild_cache.dir
+/home/keras/libcrc/CMakeFiles/edit_cache.dir
+/home/keras/libcrc/CMakeFiles/crc.dir

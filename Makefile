@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named crc32
+# Target rules for targets named crc
 
 # Build rule for target.
-crc32: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 crc32
-.PHONY : crc32
+crc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 crc
+.PHONY : crc
 
 # fast build rule for target.
-crc32/fast:
-	$(MAKE) -f CMakeFiles/crc32.dir/build.make CMakeFiles/crc32.dir/build
-.PHONY : crc32/fast
+crc/fast:
+	$(MAKE) -f CMakeFiles/crc.dir/build.make CMakeFiles/crc.dir/build
+.PHONY : crc/fast
 
 crc32.o: crc32.c.o
 
@@ -129,7 +129,7 @@ crc32.o: crc32.c.o
 
 # target to build an object file
 crc32.c.o:
-	$(MAKE) -f CMakeFiles/crc32.dir/build.make CMakeFiles/crc32.dir/crc32.c.o
+	$(MAKE) -f CMakeFiles/crc.dir/build.make CMakeFiles/crc.dir/crc32.c.o
 .PHONY : crc32.c.o
 
 crc32.i: crc32.c.i
@@ -138,7 +138,7 @@ crc32.i: crc32.c.i
 
 # target to preprocess a source file
 crc32.c.i:
-	$(MAKE) -f CMakeFiles/crc32.dir/build.make CMakeFiles/crc32.dir/crc32.c.i
+	$(MAKE) -f CMakeFiles/crc.dir/build.make CMakeFiles/crc.dir/crc32.c.i
 .PHONY : crc32.c.i
 
 crc32.s: crc32.c.s
@@ -147,7 +147,7 @@ crc32.s: crc32.c.s
 
 # target to generate assembly for a file
 crc32.c.s:
-	$(MAKE) -f CMakeFiles/crc32.dir/build.make CMakeFiles/crc32.dir/crc32.c.s
+	$(MAKE) -f CMakeFiles/crc.dir/build.make CMakeFiles/crc.dir/crc32.c.s
 .PHONY : crc32.c.s
 
 # Help Target
@@ -158,7 +158,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... crc32"
+	@echo "... crc"
 	@echo "... crc32.o"
 	@echo "... crc32.i"
 	@echo "... crc32.s"

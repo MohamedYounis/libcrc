@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/keras/libcrc/checksum.h
+stddef.h
+-
+stdint.h
+-
+
+/home/keras/libcrc/crc32.c
+stdbool.h
+-
+stdlib.h
+-
+checksum.h
+/home/keras/libcrc/checksum.h
+gentab32.h
+/home/keras/libcrc/gentab32.h
+
+/home/keras/libcrc/gentab32.h
+
