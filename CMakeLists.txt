@@ -1,5 +1,3 @@
-project(crclibrary)
-
 set (SOURCES
      crc32.c
      )
@@ -16,4 +14,3 @@ add_library (crc
              ${SOURCES}
              ${HEADERS})
 
-target_link_libraries (crc PRIVATE ${LIBS})
