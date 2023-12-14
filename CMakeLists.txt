@@ -1,5 +1,6 @@
 set (SOURCES
      crc32.c
+     crc16.c
      )
 
 set (HEADERS

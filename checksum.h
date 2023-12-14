@@ -43,13 +43,19 @@ extern "C" {
 #define		CRC_START_64_ECMA	0x0000000000000000ull
 #define		CRC_START_64_WE		0xFFFFFFFFFFFFFFFFull
 
+typedef union
+{
+  uint16_t crc16;
+  uint8_t crc[2];
+}CRC16Type_t;
+
 /*
  * Prototype list of global functions
  */
 
 unsigned char *		checksum_NMEA(      const unsigned char *input_str, unsigned char *result  );
 uint8_t			crc_8(              const unsigned char *input_str, size_t num_bytes       );
-uint16_t		crc_16(             const unsigned char *input_str, size_t num_bytes       );
+CRC16Type_t     crc16(              uint8_t* const pData, uint8_t const Length             );
 uint32_t		crc_32(             const unsigned char *input_str, size_t num_bytes       );
 uint64_t		crc_64_ecma(        const unsigned char *input_str, size_t num_bytes       );
 uint64_t		crc_64_we(          const unsigned char *input_str, size_t num_bytes       );
@@ -68,6 +74,8 @@ uint16_t		update_crc_ccitt(   uint16_t crc, unsigned char c                     
 uint16_t		update_crc_dnp(     uint16_t crc, unsigned char c                          );
 uint16_t		update_crc_kermit(  uint16_t crc, unsigned char c                          );
 uint16_t		update_crc_sick(    uint16_t crc, unsigned char c, unsigned char prev_byte );
+
+
 
 /*
  * Global CRC lookup tables
