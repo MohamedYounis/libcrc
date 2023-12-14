@@ -15,7 +15,7 @@ static uint16_t         crc_tab16[256];
 /// @param pData pointer to the first element of data
 /// @param Length length of data to calculate crc16 for
 /// @return the value of crc16 in union of type CRC16Type_t
-static CRC16Type_t crc16(uint8_t* const pData, const uint8_t Length)
+CRC16Type_t crc16(uint8_t* const pData, const uint8_t Length)
 {
   // uint16_t n;
   CRC16Type_t crc;
